@@ -855,6 +855,126 @@ a {
   top: 300px;
   right: -600px;
 }
+.background-circle_3 {
+  top: 300px;
+  left: -600px;
+}
+
+.countries {
+  position: relative;
+}
+.countries__wrapper {
+  padding-top: 128px;
+}
+@media (max-width: 640px) {
+  .countries__wrapper {
+    padding-top: 100px;
+  }
+}
+.countries__title {
+  margin-bottom: 36px;
+  max-width: 906px;
+}
+.countries__slide {
+  border-radius: 30px;
+  overflow: hidden;
+}
+.countries__slide-wrapper {
+  position: relative;
+  width: 100%;
+}
+.countries__slide-img {
+  width: 100%;
+  min-height: 191px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.countries__slide-text {
+  position: absolute;
+  left: 26px;
+  bottom: 18px;
+}
+@media (max-width: 640px) {
+  .countries__slide-text {
+    left: 18px;
+    bottom: 14px;
+  }
+}
+.countries__slide-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 15px;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+@media (max-width: 640px) {
+  .countries__slide-title {
+    font-size: 16px;
+  }
+}
+.countries__slide-description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  color: #ffffff;
+}
+@media (max-width: 640px) {
+  .countries__slide-description {
+    font-size: 14px;
+  }
+}
+.countries__pagination {
+  position: relative;
+  margin-top: 36px;
+}
+@media (max-width: 640px) {
+  .countries__pagination {
+    margin-top: 20px;
+  }
+}
+.countries__pagination-page {
+  background: #29368f;
+  opacity: 0.4;
+  border-radius: 5px;
+  width: 111px;
+  height: 8px;
+}
+@media (max-width: 960px) {
+  .countries__pagination-page {
+    width: 80px;
+    height: 6px;
+  }
+}
+@media (max-width: 640px) {
+  .countries__pagination-page {
+    width: 62px;
+    height: 4px;
+  }
+}
+.countries__pagination-page.is-active {
+  opacity: 1;
+  transform: unset;
+  background: #29368f;
+  border-radius: 5px;
+  width: 111px;
+  height: 8px;
+}
+@media (max-width: 960px) {
+  .countries__pagination-page.is-active {
+    width: 80px;
+    height: 6px;
+  }
+}
+@media (max-width: 640px) {
+  .countries__pagination-page.is-active {
+    width: 62px;
+    height: 4px;
+  }
+}
 
 .footer {
   padding-top: 170px;
