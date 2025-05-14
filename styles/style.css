@@ -1401,19 +1401,356 @@ a {
   opacity: 1;
 }
 
-.footer {
+.consultation {
+  position: relative;
   padding-top: 170px;
+  overflow: visible;
+  z-index: 2;
 }
+@media (max-width: 1280px) {
+  .consultation {
+    margin-block-end: -30px;
+  }
+}
+@media (max-width: 640px) {
+  .consultation {
+    padding-top: 100px;
+  }
+}
+.consultation__bg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1280px) {
+  .consultation__bg {
+    display: none;
+  }
+}
+.consultation__wrapper {
+  position: absolute;
+  bottom: -30px;
+  background: white;
+  max-width: 1376px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  padding: 42px 55px;
+  box-shadow: 49px 100px 45px rgba(0, 0, 0, 0.01), 27px 56px 38px rgba(0, 0, 0, 0.05), 12px 25px 28px rgba(0, 0, 0, 0.09), 3px 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  gap: 40px;
+}
+@media (max-width: 1280px) {
+  .consultation__wrapper {
+    max-width: unset;
+    bottom: unset;
+    right: unset;
+    position: relative;
+    width: 100%;
+    background: url("./../images/consultation-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: unset;
+    background-position: center right;
+    box-shadow: unset;
+    flex-direction: column;
+  }
+  .consultation__wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: inherit;
+  }
+}
+@media (max-width: 680px) {
+  .consultation__wrapper {
+    padding: 42px 55px;
+    gap: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__wrapper {
+    padding: 42px 19px;
+    bottom: -20px;
+  }
+}
+.consultation__content-wrapper {
+  max-width: 521px;
+}
+@media (max-width: 1280px) {
+  .consultation__content-wrapper {
+    max-width: unset;
+  }
+}
+.consultation__title {
+  line-height: normal;
+  margin-bottom: 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  text-transform: uppercase;
+  color: #000000;
+}
+@media (max-width: 1280px) {
+  .consultation__title {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 860px) {
+  .consultation__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 640px) {
+  .consultation__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__title {
+    font-size: 20px;
+  }
+}
+.consultation__description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
+@media (max-width: 1280px) {
+  .consultation__description {
+    color: white;
+  }
+}
+@media (max-width: 640px) {
+  .consultation__description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__description {
+    font-size: 14px;
+  }
+}
+.consultation__form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+}
+.consultation__input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+}
+.consultation__input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+.consultation__input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+@media (max-width: 1280px) {
+  .consultation__input::-moz-placeholder {
+    background: transparent;
+    color: white;
+  }
+  .consultation__input::placeholder {
+    background: transparent;
+    color: white;
+  }
+}
+@media (max-width: 860px) {
+  .consultation__input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .consultation__input::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .consultation__input::-moz-placeholder {
+    font-size: 14px;
+  }
+  .consultation__input::placeholder {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .consultation__input::placeholder {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1280px) {
+  .consultation__input {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+}
+@media (max-width: 860px) {
+  .consultation__input {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .consultation__input {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__input {
+    font-size: 12px;
+  }
+}
+.consultation__textarea {
+  resize: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+}
+.consultation__textarea::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+.consultation__textarea::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+@media (max-width: 1280px) {
+  .consultation__textarea::-moz-placeholder {
+    background: transparent;
+    color: white;
+  }
+  .consultation__textarea::placeholder {
+    background: transparent;
+    color: white;
+  }
+}
+@media (max-width: 860px) {
+  .consultation__textarea::-moz-placeholder {
+    font-size: 16px;
+  }
+  .consultation__textarea::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .consultation__textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  .consultation__textarea::placeholder {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__textarea::-moz-placeholder {
+    font-size: 12px;
+  }
+  .consultation__textarea::placeholder {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1280px) {
+  .consultation__textarea {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+}
+@media (max-width: 860px) {
+  .consultation__textarea {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .consultation__textarea {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__textarea {
+    font-size: 12px;
+  }
+}
+.consultation__button {
+  padding: 22px 64px;
+  background: linear-gradient(268.35deg, #1aa3c9 0%, #29368f 100%);
+  box-shadow: 49px 100px 45px rgba(0, 0, 0, 0.01), 27px 56px 38px rgba(0, 0, 0, 0.05), 12px 25px 28px rgba(0, 0, 0, 0.09), 3px 6px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 42px;
+  max-width: 471px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (max-width: 640px) {
+  .consultation__button {
+    font-size: 16px;
+    padding: 15px 20px;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__button {
+    font-size: 12px;
+    padding: 10px 30px;
+  }
+}
+
 .footer__block {
   background: linear-gradient(268.35deg, #1aa3c9 0%, #29368f 100%);
   width: 100%;
   position: relative;
   overflow: hidden;
-}
-@media (max-width: 640px) {
-  .footer {
-    padding-top: 100px;
-  }
 }
 .footer__figure {
   position: absolute;
