@@ -59,6 +59,7 @@ function setModal(triggerSelector, modalSelector, closeSelector, timerValue) {
         modal.classList.add('none');
         isOpen = false;
         body.style.overflow = 'unset';
+        body.style.overflowX = 'hidden';
     };
 
     document.addEventListener('keydown', (e) => {

@@ -311,11 +311,6 @@ a {
   align-items: center;
   padding: 16px 0;
 }
-@media (max-width: 1400px) {
-  .header__wrapper {
-    padding: 10px 20px;
-  }
-}
 @media (max-width: 680px) {
   .header__logo {
     max-width: 130px;
@@ -1878,15 +1873,17 @@ a {
   color: #2b364c;
 }
 .modal-consultation__btn {
-  font-weight: 500;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
   text-align: center;
-  color: #fff;
-  border-radius: 100px;
-  padding: 15px 30px;
+  text-transform: uppercase;
+  color: #ffffff;
   max-width: 350px;
   margin-top: 15px;
-  background: linear-gradient(268.35deg, #d01324 0%, #f98a10 100%);
+  padding: 15px 30px;
+  background: linear-gradient(268.35deg, #1aa3c9 0%, #29368f 100%);
   box-shadow: 49px 100px 45px rgba(0, 0, 0, 0.01), 27px 56px 38px rgba(0, 0, 0, 0.05), 12px 25px 28px rgba(0, 0, 0, 0.09), 3px 6px 15px rgba(0, 0, 0, 0.1);
   border-radius: 42px;
 }

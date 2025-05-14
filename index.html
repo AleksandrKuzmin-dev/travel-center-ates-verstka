@@ -972,33 +972,50 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splid
                 const answersSplide = new Splide('.answers__splide', {
                     pagination: false,
                     drag: false,
-                    /*   arrows: false,
-                    type: 'loop',
-                    gap: '16px',
-                    perPage: 4,
-                    perMove: 4, */
-                    /*   classes: {
-                        pagination: 'splide__pagination countries__pagination',
-                        page: 'splide__pagination__page countries__pagination-page',
-                    }, */
-                    /*   breakpoints: {
-                        1280: {
-                            perMove: 3,
-                            perPage: 3,
-                        },
-                    }, */
                 });
 
                 answersSplide.mount();
-            });
 
-            setMobileMenu(
-                '.header__burger-button',
-                '.mobile-header',
-                'mobile-header_show',
-                '.mobile-header__burger-close',
-                '.mobile-header__menu-item'
-            );
+                setMobileMenu(
+                    '.header__burger-button',
+                    '.mobile-header',
+                    'mobile-header_show',
+                    '.mobile-header__burger-close',
+                    '.mobile-header__menu-item'
+                );
+
+                setModal(
+                    '.first-window__button-request_mobile-hide',
+                    '.modal-consultation',
+                    '.modal-consultation__close'
+                );
+
+                setModal(
+                    '.first-window__button-request_pc-hidden',
+                    '.modal-consultation',
+                    '.modal-consultation__close'
+                );
+                setModal(
+                    '.first-window__button-call',
+                    '.modal-consultation',
+                    '.modal-consultation__close'
+                );
+                setModal(
+                    '.header__button',
+                    '.modal-consultation',
+                    '.modal-consultation__close'
+                );
+                setModal(
+                    '.mobile-header__cta-button',
+                    '.modal-consultation',
+                    '.modal-consultation__close'
+                );
+                setModal(
+                    '.cta__button',
+                    '.modal-consultation',
+                    '.modal-consultation__close'
+                );
+            });
         </script>
     </body>
 </html>
