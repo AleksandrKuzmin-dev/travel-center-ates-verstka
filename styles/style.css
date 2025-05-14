@@ -1094,6 +1094,313 @@ a {
   }
 }
 
+.cta {
+  padding-top: 128px;
+}
+@media (max-width: 640px) {
+  .cta {
+    padding-top: 100px;
+  }
+}
+.cta__wrapper {
+  border-radius: 60px;
+  background-image: url("./../images/cta-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  gap: 90px;
+  padding: 156px 156px 56px 156px;
+  align-items: flex-end;
+}
+@media (max-width: 1280px) {
+  .cta__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 156px 56px 56px 56px;
+  }
+}
+@media (max-width: 500px) {
+  .cta__wrapper {
+    padding: 15px;
+    align-items: center;
+    border-radius: 8px;
+  }
+}
+.cta__text-content-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .cta__text-content-mobile {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .cta__text-content {
+    display: none;
+  }
+}
+.cta__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+@media (max-width: 1280px) {
+  .cta__title {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1180px) {
+  .cta__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 860px) {
+  .cta__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 640px) {
+  .cta__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .cta__title {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 12px;
+  }
+}
+.cta__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.cta__text_bold {
+  font-weight: 600;
+}
+@media (max-width: 1280px) {
+  .cta__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1080px) {
+  .cta__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 960px) {
+  .cta__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .cta__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .cta__text {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 12px;
+  }
+}
+.cta__button {
+  padding: 22px 44px;
+  max-width: 296px;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+@media (max-width: 640px) {
+  .cta__button {
+    font-size: 16px;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .cta__button {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 360px) {
+  .cta__button {
+    font-size: 12px;
+  }
+}
+
+.answers {
+  padding-top: 128px;
+}
+@media (max-width: 640px) {
+  .answers {
+    padding-top: 100px;
+  }
+}
+.answers__splide {
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  gap: 60px;
+  align-items: flex-end;
+}
+@media (max-width: 1180px) {
+  .answers__splide {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .answers__splide {
+    padding: 40px 20px;
+  }
+}
+.answers__slide {
+  width: 76%;
+}
+.answers__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+@media (max-width: 1380px) {
+  .answers__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 640px) {
+  .answers__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .answers__title {
+    font-size: 20px;
+    text-transform: none;
+  }
+}
+.answers__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.answers__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #787777;
+}
+@media (max-width: 1380px) {
+  .answers__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .answers__text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .answers__text {
+    font-size: 16px;
+    text-transform: none;
+  }
+}
+.answers__arrows {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 1180px) {
+  .answers__arrows {
+    position: absolute;
+    bottom: -30px;
+    gap: 15px;
+    left: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .answers__arrows {
+    bottom: -18px;
+    left: 20px;
+  }
+}
+.answers__arrow {
+  position: static;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #216fad;
+  border: 1px solid #216fad;
+  opacity: 1;
+  transform: unset;
+}
+@media (max-width: 1180px) {
+  .answers__arrow {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .answers__arrow {
+    width: 37px;
+    height: 37px;
+    min-width: 37px;
+    min-height: 37px;
+  }
+}
+.answers__arrow svg path {
+  fill: white;
+}
+.answers__arrow:disabled {
+  background-color: white;
+  opacity: 1;
+}
+.answers__arrow:disabled svg path {
+  fill: #216fad;
+}
+.answers__arrow:hover:not(:disabled) {
+  opacity: 1;
+}
+
 .footer {
   padding-top: 170px;
 }
