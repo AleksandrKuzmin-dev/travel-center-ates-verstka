@@ -21,6 +21,7 @@ function setMobileMenu(
     const closeModal = () => {
         modal.classList.remove(modalShowSelector);
         body.style.overflow = 'unset';
+        body.style.overflowX = 'hidden';
     };
 
     document.addEventListener('keydown', (e) => {
