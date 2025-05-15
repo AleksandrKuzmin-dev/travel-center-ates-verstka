@@ -52,6 +52,41 @@ main {
     }
 }
 
+.container-left-margin {
+    margin-left: calc((100vw - 1380px) / 2);
+    margin-right: calc((100vw - 1920px) / 2);
+    height: 100%;
+
+    @media (max-width: 1920px) {
+        margin-left: calc((100vw - 1380px) / 2);
+        height: 100%;
+    }
+
+    @media (max-width: 1400px) {
+        margin-left: unset;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+.container-right-margin {
+    margin-right: calc((100vw - 1380px) / 2);
+    margin-left: calc((100vw - 1920px) / 2);
+    height: 100%;
+
+    @media (max-width: 1920px) {
+        margin-right: calc((100vw - 1380px) / 2);
+        height: 100%;
+    }
+
+    @media (max-width: 1400px) {
+        margin-right: unset;
+        margin-left: unset;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
 button,
 a {
     cursor: pointer;
