@@ -619,11 +619,6 @@
         padding-top: 100px;
     }
 
-    & .container-right-margin {
-        @media (max-width: 1280px) {
-        }
-    }
-
     &__wrapper {
         display: flex;
         gap: 56px;
@@ -690,6 +685,149 @@
 
         @media (max-width: 500px) {
             font-size: 14px;
+        }
+    }
+}
+
+.advantages {
+    padding-top: 150px;
+    position: relative;
+
+    & .container-left-margin {
+        @media (max-width: 1480px) {
+            margin: 0;
+            padding: 0 20px;
+        }
+    }
+
+    @media (max-width: 960px) {
+        padding-top: 100px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 65px;
+
+        @media (max-width: 1480px) {
+            display: block;
+        }
+    }
+
+    &__text-content {
+    }
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    &__texts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: black;
+
+        &_bold {
+            font-weight: 700;
+            color: #29368f;
+        }
+
+        @media (max-width: 860px) {
+            font-size: 18px;
+        }
+        @media (max-width: 640px) {
+            font-size: 16px;
+        }
+        @media (max-width: 500px) {
+            font-size: 14px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @media (max-width: 1480px) {
+            background-color: #216fad;
+            padding: 20px 30px;
+            border-radius: 48px 48px 0 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 820px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        & svg {
+            @media (max-width: 960px) {
+                width: 36px;
+                height: 36px;
+                max-width: 36px;
+                max-height: 36px;
+            }
+        }
+    }
+    &__card-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: #29368f;
+
+        @media (max-width: 1480px) {
+            color: white;
+            font-size: 24px;
+        }
+        @media (max-width: 960px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 640px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
+    }
+
+    &__card-icon-path {
+        @media (max-width: 1480px) {
+            fill: white;
+        }
+    }
+
+    &__image {
+        &_pc {
+            @media (max-width: 1480px) {
+                display: none;
+            }
+        }
+
+        &_mobile {
+            display: none;
+            @media (max-width: 1480px) {
+                margin-block-start: -1px;
+                border-radius: 0 0 48px 48px;
+                display: block;
+            }
         }
     }
 }
@@ -1157,10 +1295,8 @@
         right: -400px;
     }
 
-    /*     
-
     &_3 {
         top: 400px;
         left: -400px;
-    } */
+    }
 }
