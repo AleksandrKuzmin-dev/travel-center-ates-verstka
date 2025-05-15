@@ -31,7 +31,6 @@ function setMobileMenu(
     });
 
     menuLinks.forEach((link) => {
-        console.log(link);
         link.addEventListener('click', closeModal);
     });
 
