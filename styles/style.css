@@ -1208,9 +1208,9 @@ a {
 
 .cta-mobile {
   display: none;
-  padding-top: 150px;
   position: relative;
   z-index: 1;
+  padding-top: 150px;
 }
 @media (max-width: 1280px) {
   .cta-mobile {
@@ -1404,6 +1404,73 @@ a {
 .countries__pagination-page.is-active {
   transform: unset;
   opacity: 1;
+}
+
+.econom {
+  padding-top: 150px;
+  position: relative;
+}
+@media (max-width: 1280px) {
+  .econom {
+    padding-top: 100px;
+  }
+}
+.econom__wrapper {
+  padding: 75px 50px;
+  background: #ffffff;
+  box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.08);
+  border-radius: 42px;
+}
+@media (max-width: 860px) {
+  .econom__wrapper {
+    padding: unset;
+    background: unset;
+    box-shadow: unset;
+    border-radius: unset;
+  }
+}
+.econom__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  background: linear-gradient(268.35deg, #1aa3c9 0%, #29368f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.econom__text_underline {
+  border-bottom: 2px solid #29368f;
+}
+@media (max-width: 860px) {
+  .econom__text_underline {
+    border: unset;
+  }
+}
+@media (max-width: 1380px) {
+  .econom__text {
+    font-size: 36px;
+  }
+}
+@media (max-width: 860px) {
+  .econom__text {
+    font-size: 24px;
+    background: unset;
+    color: #29368f;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+  }
+}
+@media (max-width: 640px) {
+  .econom__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .econom__text {
+    font-size: 16px;
+  }
 }
 
 .consultation {
@@ -1930,4 +1997,15 @@ a {
 .background-circle_3 {
   top: 400px;
   left: -400px;
+}
+.background-circle_4 {
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 80%;
+}
+@media (max-width: 860px) {
+  .background-circle_4 {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
