@@ -835,6 +835,7 @@
 .cta {
     padding-top: 250px;
     position: relative;
+    z-index: 1;
 
     @media (max-width: 1280px) {
         display: none;
@@ -905,6 +906,7 @@
     display: none;
     padding-top: 150px;
     position: relative;
+    z-index: 1;
 
     @media (max-width: 1280px) {
         display: block;
@@ -952,7 +954,7 @@
         }
 
         @media (max-width: 860px) {
-            font-size: 18x;
+            font-size: 18px;
         }
 
         @media (max-width: 640px) {
@@ -1015,6 +1017,112 @@
             position: absolute;
             bottom: 0;
             max-width: 180px;
+        }
+    }
+}
+
+.countries {
+    margin-block-start: -106px;
+
+    @media (max-width: 860px) {
+        margin-block-start: -30px;
+    }
+
+    &__splide {
+    }
+
+    &__track {
+    }
+
+    &__list {
+    }
+
+    &__slide {
+        position: relative;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    &__slide-img {
+    }
+
+    &__slide-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 42px;
+        color: #ffffff;
+
+        position: absolute;
+        bottom: 83px;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: max-content;
+
+        @media (max-width: 1380px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 860px) {
+            font-size: 24px;
+            bottom: 40px;
+        }
+
+        @media (max-width: 640px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
+    }
+
+    &__arrows {
+    }
+
+    &__arrow {
+        background-color: unset;
+
+        & svg {
+            fill: white;
+        }
+    }
+
+    &__arrow-prev {
+    }
+
+    &__arrow-next {
+    }
+
+    &__pagination {
+        bottom: 35px;
+
+        @media (max-width: 860px) {
+            bottom: 15px;
+        }
+    }
+    &__pagination-page {
+        width: 51px;
+        height: 6px;
+        border-radius: 0;
+        background: #ffffff;
+        transform: unset;
+        opacity: 0.6;
+
+        @media (max-width: 860px) {
+            width: 30px;
+            height: 4px;
+        }
+
+        @media (max-width: 640px) {
+        }
+
+        @media (max-width: 500px) {
+        }
+
+        &.is-active {
+            transform: unset;
+            opacity: 1;
         }
     }
 }

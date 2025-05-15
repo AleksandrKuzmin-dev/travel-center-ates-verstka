@@ -549,6 +549,39 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </section>
 
+            <section class="countries">
+                <div
+                    class="splide countries__splide"
+                    role="group"
+                    aria-label="Splide Basic HTML Example"
+                >
+                    <div class="splide__track countries__track">
+                        <ul class="splide__list countries__list">
+                            <div class="splide__slide countries__slide">
+                                <img
+                                    class="countries__slide-img"
+                                    alt="Природа"
+                                    src="./images/countries-1.jpg"
+                                />
+                                <p class="countries__slide-text">
+                                    Папуа - Новая Гвинея (60 дней)
+                                </p>
+                            </div>
+                            <div class="splide__slide countries__slide">
+                                <img
+                                    class="countries__slide-img"
+                                    alt="Природа"
+                                    src="./images/countries-1.jpg"
+                                />
+                                <p class="countries__slide-text">
+                                    Папуа - Новая Гвинея (60 дней)
+                                </p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <section class="consultation">
                 <img
                     class="consultation__bg"
@@ -679,60 +712,32 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 
         <script src="./js/script.js"></script>
 
-        <!--  <script>
+        <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const countriesSplide = new Splide('.countries__splide', {
-                    arrows: false,
                     type: 'loop',
-                    gap: '16px',
-                    perPage: 4,
-                    perMove: 4,
+                    perPage: 1,
+                    perMove: 1,
                     classes: {
                         pagination: 'splide__pagination countries__pagination',
                         page: 'splide__pagination__page countries__pagination-page',
+                        arrows: 'splide__arrows countries__arrows',
+                        arrow: 'splide__arrow countries__arrow',
+                        prev: 'splide__arrow--prev countries__arrow-prev',
+                        next: 'splide__arrow--next ycountries__arrow-next',
                     },
 
-                    breakpoints: {
-                        1280: {
+                    /*  breakpoints: {
+                          1280: {
                             perMove: 3,
                             perPage: 3,
                         },
-                        834: {
-                            perPage: 1,
-                            perMove: 1,
-                            grid: {
-                                rows: 2,
-                                cols: 2,
-                                gap: {
-                                    row: '20px',
-                                    col: '20px',
-                                },
-                            },
-                        },
-
-                        640: {
-                            grid: {
-                                rows: 2,
-                                cols: 2,
-                                gap: {
-                                    row: '10px',
-                                    col: '10px',
-                                },
-                            },
-                        },
-                    },
+                    }, */
                 });
 
-                countriesSplide.mount(window.splide.Extensions);
+                countriesSplide.mount();
 
-                const answersSplide = new Splide('.answers__splide', {
-                    pagination: false,
-                    drag: false,
-                });
-
-                answersSplide.mount();
-
-                setMobileMenu(
+                /*      setMobileMenu(
                     '.header__burger-button',
                     '.mobile-header',
                     'mobile-header_show',
@@ -770,8 +775,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
                     '.cta__button',
                     '.modal-consultation',
                     '.modal-consultation__close'
-                );
+                ); */
             });
-        </script> -->
+        </script>
     </body>
 </html>
