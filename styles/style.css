@@ -1829,6 +1829,19 @@ a {
   right: -1px;
   top: -345px;
 }
+@media (max-width: 640px) {
+  .footer__figure_pc {
+    display: none;
+  }
+}
+.footer__figure_mobile {
+  display: none;
+}
+@media (max-width: 640px) {
+  .footer__figure_mobile {
+    display: block;
+  }
+}
 @media (max-width: 1400px) {
   .footer__figure {
     top: -78%;
@@ -1849,8 +1862,13 @@ a {
 }
 @media (max-width: 680px) {
   .footer__figure {
-    top: 0;
-    width: 36%;
+    top: 30px;
+    width: 35%;
+  }
+}
+@media (max-width: 500px) {
+  .footer__figure {
+    top: 50px;
   }
 }
 .footer__wrapper {

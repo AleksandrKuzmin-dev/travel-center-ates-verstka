@@ -1482,6 +1482,20 @@
         position: absolute;
         right: -1px;
         top: -345px;
+
+        &_pc {
+            @media (max-width: 640px) {
+                display: none;
+            }
+        }
+
+        &_mobile {
+            display: none;
+
+            @media (max-width: 640px) {
+                display: block;
+            }
+        }
         @media (max-width: 1400px) {
             top: -78%;
             width: 45%;
@@ -1498,8 +1512,12 @@
         }
 
         @media (max-width: 680px) {
-            top: 0;
-            width: 36%;
+            top: 30px;
+            width: 35%;
+        }
+
+        @media (max-width: 500px) {
+            top: 50px;
         }
     }
 
