@@ -1041,6 +1041,9 @@
         position: relative;
         max-height: 100vh;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__slide-img {
@@ -1050,7 +1053,7 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 42px;
+        font-size: 48px;
         color: #ffffff;
 
         position: absolute;
@@ -1066,6 +1069,10 @@
         @media (max-width: 860px) {
             font-size: 24px;
             bottom: 40px;
+        }
+
+        @media (max-width: 680px) {
+            bottom: 35px;
         }
 
         @media (max-width: 640px) {
@@ -1109,12 +1116,14 @@
         transform: unset;
         opacity: 0.6;
 
-        @media (max-width: 860px) {
+        @media (max-width: 1080px) {
             width: 30px;
             height: 4px;
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 680px) {
+            width: 9px;
+            height: 2px;
         }
 
         @media (max-width: 500px) {

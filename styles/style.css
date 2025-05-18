@@ -1338,12 +1338,15 @@ a {
   position: relative;
   max-height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .countries__slide-text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 42px;
+  font-size: 48px;
   color: #ffffff;
   position: absolute;
   bottom: 83px;
@@ -1361,6 +1364,11 @@ a {
   .countries__slide-text {
     font-size: 24px;
     bottom: 40px;
+  }
+}
+@media (max-width: 680px) {
+  .countries__slide-text {
+    bottom: 35px;
   }
 }
 @media (max-width: 640px) {
@@ -1395,10 +1403,16 @@ a {
   transform: unset;
   opacity: 0.6;
 }
-@media (max-width: 860px) {
+@media (max-width: 1080px) {
   .countries__pagination-page {
     width: 30px;
     height: 4px;
+  }
+}
+@media (max-width: 680px) {
+  .countries__pagination-page {
+    width: 9px;
+    height: 2px;
   }
 }
 .countries__pagination-page.is-active {
